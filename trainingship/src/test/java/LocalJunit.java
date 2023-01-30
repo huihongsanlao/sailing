@@ -1,4 +1,5 @@
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 import java.io.*;
 
@@ -15,14 +16,19 @@ public class LocalJunit {
      */
     @Test
     public void input2output() throws Exception{
+        File file = new File("D:\\doc\\read.txt");
+        if(!file.exists()){
+            System.out.println("没有这个文件>>>>>>>>>");
+            return ;
+        }
         //创建字节输入流
-        FileInputStream input=new FileInputStream("E:\\doc\\read.txt");
+        FileInputStream input=new FileInputStream("D:\\doc\\read.txt");
         //将字节输入流转换成字符输入流
         InputStreamReader streamReader=new InputStreamReader(input);
         //赋予字符输入流对象缓冲区
         BufferedReader bufferReader=new BufferedReader(streamReader);
         //创建字节输出流
-        FileOutputStream output=new FileOutputStream("E:\\doc\\write.txt");
+        FileOutputStream output=new FileOutputStream("D:\\doc\\write.txt");
         //将字节输出流转换成字符输出流
         OutputStreamWriter streamWriter=new OutputStreamWriter(output);
         //赋予字符输出流对象缓冲区

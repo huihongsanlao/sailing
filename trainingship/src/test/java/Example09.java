@@ -7,6 +7,11 @@ public class Example09 {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
+        File file = new File("D:\\doc\\read.txt");
+        if(!file.exists()){
+            System.out.println("没有这个文件>>>>>>>>>");
+            return ;
+        }
         //创建字节输入流
         FileInputStream input=new FileInputStream("E:\\doc\\read.txt");
         //将字节输入流转换成字符输入流
