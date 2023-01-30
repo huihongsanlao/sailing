@@ -1,6 +1,11 @@
 import java.io.*;
 
 public class Example09 {
+    /**
+     * 输入流转输出流
+     * @param args
+     * @throws Exception
+     */
     public static void main(String[] args) throws Exception {
         //创建字节输入流
         FileInputStream input=new FileInputStream("E:\\doc\\read.txt");
