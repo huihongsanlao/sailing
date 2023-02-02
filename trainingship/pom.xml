@@ -13,5 +13,12 @@
     <name>trainingship</name>
     <description>训练舰</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.travel.Interstellar</groupId>
+            <artifactId>supplyship</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
