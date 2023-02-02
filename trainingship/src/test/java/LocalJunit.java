@@ -41,4 +41,8 @@ public class LocalJunit {
         bufferReader.close();
         bufferWriter.close();
     }
+
+    public void test(){
+        System.out.println("11111111");
+    }
 }
