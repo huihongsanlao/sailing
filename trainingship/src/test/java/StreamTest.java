@@ -36,5 +36,6 @@ public class StreamTest {
      */
     public void integratedCase(String str){
 
+
     }
 }
